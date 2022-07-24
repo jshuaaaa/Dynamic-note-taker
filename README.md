@@ -20,7 +20,7 @@
   
   simply fork the repo and do "npm i"
   
-  Project is also live at: 
+  Project is also live at: https://mysterious-headland-99228.herokuapp.com/
   ## Usage 
   
   *Instructions and examples for use:*
