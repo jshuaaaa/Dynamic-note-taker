@@ -26,6 +26,7 @@
   *Instructions and examples for use:*
   
   Can be used to take notes for different activites
+  ![screen123](https://user-images.githubusercontent.com/95507083/180661060-1ac65371-af36-4ae6-a9b4-e5ed84c29d11.png)
   
   ## License
   
