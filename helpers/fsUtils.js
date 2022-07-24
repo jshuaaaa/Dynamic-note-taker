@@ -31,4 +31,14 @@ const readAndAppend = (content, file) => {
   });
 };
 
-module.exports = { readFromFile, writeToFile, readAndAppend };
+function newNote(body, array) {
+  const note = body;
+  array.push(note);
+  fs.writeFileSync(
+    path.join(__dirname, './db/db.json'),
+    JSON.stringify({ notes: array }, null, 2)
+  );
+  return note;
+};  
+
+module.exports = { readFromFile, writeToFile, newNote };
