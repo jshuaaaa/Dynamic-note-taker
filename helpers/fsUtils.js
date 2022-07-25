@@ -1,5 +1,7 @@
 const fs = require('fs');
 const util = require('util');
+const path = require("path");
+const { notes } = require('../db/db.json')
 
 // Promise version of fs.readFile
 const readFromFile = util.promisify(fs.readFile);
@@ -34,10 +36,7 @@ const readAndAppend = (content, file) => {
 function newNote(body, array) {
   const note = body;
   array.push(note);
-  fs.writeFileSync(
-    path.join(__dirname, './db/db.json'),
-    JSON.stringify({ notes: array }, null, 2)
-  );
+  readAndAppend(array,'../db/db.json')
   return note;
 };  
 
